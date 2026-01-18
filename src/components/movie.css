@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Page background */
+body{
+    background: linear-gradient(135deg,#141e30,#243b55);
+    min-height:100vh;
+    color:white;
+}
+
+/* Main container */
+.movie-container{
+    max-width:800px;
+    margin:40px auto;
+    background:#0f172a;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.5);
+}
+
+/* Heading */
+.movie-title{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:25px;
+    letter-spacing:1px;
+}
+
+/* Search area */
+.search-box{
+    display:flex;
+    gap:10px;
+}
+
+/* Input */
+.search-box input{
+    flex:1;
+    padding:12px;
+    border-radius:8px;
+    border:none;
+    outline:none;
+    font-size:16px;
+}
+
+/* Dropdown */
+.search-box select{
+    padding:12px;
+    border-radius:8px;
+    border:none;
+    outline:none;
+    background:#1e293b;
+    color:white;
+    cursor:pointer;
+}
+
+/* Movie list container */
+.movie-list{
+    max-width:700px;
+    margin:30px auto;
+}
+
+/* Movie card */
+.movie-card{
+    display:flex;
+    gap:15px;
+    background:#1e293b;
+    padding:15px;
+    border-radius:12px;
+    margin-bottom:15px;
+    transition:0.3s;
+}
+
+.movie-card:hover{
+    transform:scale(1.03);
+    box-shadow:0 10px 25px rgba(0,0,0,0.6);
+}
+
+/* Poster */
+.movie-card img{
+    width:110px;
+    height:160px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* Movie info */
+.movie-info h3{
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+.movie-info p{
+    color:#cbd5f5;
+    margin:3px 0;
+}
+
+/* Pagination */
+.pagination{
+    text-align:center;
+    margin-top:25px;
+}
+
+.pagination button{
+    padding:8px 18px;
+    border:none;
+    border-radius:6px;
+    background:#38bdf8;
+    color:black;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.pagination button:disabled{
+    background:#64748b;
+    cursor:not-allowed;
+}
+
+.pagination span{
+    margin:0 12px;
+    font-weight:bold;
+}
