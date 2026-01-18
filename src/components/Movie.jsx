@@ -13,7 +13,7 @@ export default function Movie() {
 
   async function fetchmovies(pageNumber=1) {
     let response = await fetch(
-      `http://www.omdbapi.com/?apikey=${apikey}&s=${query}&y=${year}&page=${pageNumber}`
+      `https://www.omdbapi.com/?apikey=${apikey}&s=${query}&y=${year}&page=${pageNumber}`
     );
     const data = await response.json();
 
