@@ -63,6 +63,23 @@ body{
     margin:30px auto;
 }
 
+.search-btn{
+  padding:12px 20px;
+  border:none;
+  border-radius:8px;
+  background:#22c55e;
+  color:black;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.search-btn:hover{
+  background:#16a34a;
+  transform:scale(1.05);
+}
+
+
 /* Movie card */
 .movie-card{
     display:flex;
